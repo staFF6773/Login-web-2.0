@@ -1,0 +1,9 @@
+.error-alert {
+    display: none;
+    padding: 0.75rem;
+    background-color: #f87171;
+    color: white;
+    border-radius: 0.375rem;
+    margin-top: 1rem;
+    text-align: center;
+}
