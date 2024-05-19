@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/animations.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 flex flex-col items-center justify-center min-h-screen transition-colors duration-300" id="app">
+    <div class="absolute top-4 right-4">
+        <button id="theme-toggle" class="bg-gray-800 text-gray-200 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">Switch to Light Mode</button>
+    </div>
+    <main class="flex-1 flex flex-col items-center justify-center">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-2xl text-center animate-slide-in" id="card">
+            <h1 class="text-4xl font-bold mb-6 text-center animate-fade-in">Hello welcome to the final page</h1>
+            <p class="mb-4 text-lg">Hello user if you are here is because you saw my github repository remember that this is not a login system it is only a login design it saves no information.</p>
+            <a href="https://github.com/staFF6773/Login-web-2.0" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">github repository</a>
+        </div>
+    </main>
+    <footer class="w-full bg-gray-800 p-4 text-center">
+        <p class="text-gray-500">&copy; Login-web-2.0 Rights to <a href="https://github.com/staFF6773/Login-web-2.0">staFF6773</a> and more</p>
+    </footer>
+
+    <script src="/js/theme-toggle.js"></script>
+</body>
+</html>
