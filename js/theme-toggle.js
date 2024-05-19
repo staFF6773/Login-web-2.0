@@ -4,6 +4,7 @@ const card = document.getElementById('card');
 const inputs = document.querySelectorAll('input');
 const labels = document.querySelectorAll('label');
 const links = document.querySelectorAll('a');
+const footer = document.querySelector('footer');
 
 themeToggle.addEventListener('click', () => {
     app.classList.toggle('bg-gray-900');
@@ -33,5 +34,14 @@ themeToggle.addEventListener('click', () => {
         link.classList.toggle('text-indigo-500');
     });
 
+    footer.classList.toggle('bg-gray-800');
+    footer.classList.toggle('bg-gray-200');
+    footer.classList.toggle('text-gray-500');
+    footer.classList.toggle('text-gray-800');
+
     themeToggle.textContent = app.classList.contains('bg-gray-900') ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+
+    const githubLink = document.querySelector('footer a');
+    githubLink.classList.toggle('text-white');
+    githubLink.classList.toggle('text-gray-900');
 });
